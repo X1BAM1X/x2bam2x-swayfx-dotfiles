@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 # 主屏亮度百分比
 brightness=$(brightnessctl -d intel_backlight get)
