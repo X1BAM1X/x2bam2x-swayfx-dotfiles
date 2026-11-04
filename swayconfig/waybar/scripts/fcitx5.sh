@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 im=$(fcitx5-remote -n 2>/dev/null)
 case "$im" in
