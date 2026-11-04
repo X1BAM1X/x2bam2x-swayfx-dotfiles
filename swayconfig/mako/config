@@ -1,0 +1,28 @@
+# 外观
+background-color=#FAFAFA
+text-color=#2E2E2E
+border-color=#4A90D9
+border-size=2
+border-radius=2
+font=LXGW WenKai Mono 12
+
+# 尺寸和位置
+width=350
+height=150
+padding=15
+
+# 位置
+# 这里可能有点优化空间 我凑合用了。。
+anchor=bottom-right
+outer-margin=0,0,80,0
+
+
+# 超时时间
+default-timeout=5000
+
+# 图标
+icon-path=/usr/share/icons/Papirus
+max-icon-size=48
+
+# 进度条
+progress-color=over #4A90D9

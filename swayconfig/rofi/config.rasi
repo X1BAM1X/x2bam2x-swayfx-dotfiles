@@ -1,0 +1,15 @@
+@theme "/usr/share/rofi/themes/Arc.rasi"
+
+element-icon {
+    size: 1.5em;
+}
+window {
+    border: 3;
+    border-radius: 8px;
+}
+
+configuration {
+    animation: "fade";
+    matching: "fuzzy";
+    sorting-method: "fzf";
+}

@@ -1,0 +1,68 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 50,
+    "spacing": 0,
+
+    "modules-left": ["sway/workspaces", "sway/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "disk", "pulseaudio", "custom/brightness", "custom/fcitx", "cpu", "memory", "battery"],
+
+    "sway/workspaces": {
+        "all-outputs": false,
+        "format": "{name}"
+    },
+    "sway/window": {
+        "max-length": 60
+    },
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M}"
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "<span color='#4A90D9'>CPU</span> {usage}%"
+    },
+    "memory": {
+        "interval": 2,
+        "format": "<span color='#4A90D9'>RAM</span> {percentage}%"
+    },
+    "pulseaudio": {
+        "format": "<span color='#4A90D9'>VOL</span> {volume}%",
+        "format-muted": "<span color='#4A90D9'>VOL</span> MUTED"
+    },
+    "network": {
+        "interval": 5,
+        "format-wifi": "<span color='#4A90D9'>WIFI</span> {essid}",
+        "format-ethernet": "<span color='#4A90D9'>{ifname}</span> {ipaddr}",
+        "format-disconnected": "<span color='#D9534F'>NO NET</span>"
+    },
+    "disk": {
+        "interval": 25,
+        "format": "<span color='#7BAF7B'>/</span> {percentage_used}%",
+        "path": "/"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "battery": {
+    "interval": 1,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "<span color='#4A90D9'>BAT</span> {capacity}%",
+    "format-charging": "<span color='#7BAF7B'>CHR</span> {capacity}%",
+    "format-plugged": "<span color='#7BAF7B'>PLG</span> {capacity}%",
+    "format-full": "<span color='#7BAF7B'>FUL</span> {capacity}%"
+    },
+    "custom/fcitx": {
+        "exec": "~/.config/waybar/scripts/fcitx5.sh",
+        "interval": 1,
+        "format": "<span color='#4A90D9'>LANG</span> {}"
+    },
+    "custom/brightness": {
+    "exec": "~/.config/waybar/scripts/brightness.sh",
+    "interval": 0.7,
+    "format": "<span color='#4A90D9'>BRI</span> {}"
+    }
+}
